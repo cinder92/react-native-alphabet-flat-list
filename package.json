@@ -1,6 +1,6 @@
 {
   "name": "react-native-alphabet-flat-list",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "react native alphabet flat list",
   "main": "built/index.js",
   "types": "built/index.d.ts",
