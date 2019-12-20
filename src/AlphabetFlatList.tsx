@@ -43,6 +43,7 @@ export interface IProps<ItemT> {
   activeBackgroundColor?: string;
   activeTextColor?: string;
   inactiveTextColor?: string;
+  fontSize?: number;
 }
 
 const defaultProps = {
@@ -244,6 +245,7 @@ export default class AlphabetFlatList<ItemT> extends Component<IProps<ItemT>, IS
           activeBackgroundColor={this.props.activeBackgroundColor}
           activeTextColor={this.props.activeTextColor}
           inactiveTextColor={this.props.inactiveTextColor}
+          fontSize={this.props.fontSize}
         />
       </View>
     )

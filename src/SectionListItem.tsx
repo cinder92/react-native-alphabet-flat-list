@@ -17,6 +17,7 @@ interface IProps {
   activeBackgroundColor?: string;
   activeTextColor?: string;
   inactiveTextColor?: string;
+  fontSize?:number;
 }
 
 const SectionListItem: FC<IProps> = function (props) {
@@ -30,6 +31,7 @@ const SectionListItem: FC<IProps> = function (props) {
         <Text
           style={[styles.sectionListItemText, {
             color: props.active ? props.activeTextColor || 'white' : props.inactiveTextColor || '#333',
+            fontSize : props.fontSize || 12
           }]}
         >
           {props.title}

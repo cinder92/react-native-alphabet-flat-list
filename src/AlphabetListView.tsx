@@ -22,6 +22,7 @@ interface IProps {
   activeBackgroundColor?: string;
   activeTextColor?: string;
   inactiveTextColor?: string;
+  fontSize?: number;
 }
 
 const initState = {
@@ -90,7 +91,7 @@ class AlphabetListView extends PureComponent<IProps, State> {
       return null;
     }
 
-    const {topPosition, contentHeight, titles, activeBackgroundColor, activeTextColor, inactiveTextColor} = this.props;
+    const {topPosition, contentHeight, titles, activeBackgroundColor, activeTextColor, inactiveTextColor, fontSize} = this.props;
 
     return (
       <View
@@ -112,6 +113,7 @@ class AlphabetListView extends PureComponent<IProps, State> {
             activeBackgroundColor={activeBackgroundColor}
             activeTextColor={activeTextColor}
             inactiveTextColor={inactiveTextColor}
+            fontSize={fontSize}
           />
         ))}
       </View>
