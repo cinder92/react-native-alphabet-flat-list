@@ -15,5 +15,9 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules", "dist", "example"]
+  "include": [
+    "src"
+  ],
+  "exclude": ["node_modules", "dist", "example"],
+  "compileOnSave": true
 }
