@@ -40,6 +40,9 @@ export interface IProps<ItemT> {
   renderSectionHeader?: ListRenderSectionHeader<SectionHeaderIProps>;
   ListHeaderComponent?: React.ComponentType<any> | React.ReactElement | null;
   alphabetToast?: boolean;
+  activeBackgroundColor?: string;
+  activeTextColor?: string;
+  inactiveTextColor?: string;
 }
 
 const defaultProps = {
