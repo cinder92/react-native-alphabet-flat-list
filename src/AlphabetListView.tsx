@@ -19,6 +19,9 @@ interface IProps {
   titles: string[];
   onSelect: (index: number) => void;
   alphabetToast: boolean;
+  activeBackgroundColor?: string;
+  activeTextColor?: string;
+  inactiveTextColor?: string;
 }
 
 const initState = {
@@ -87,7 +90,7 @@ class AlphabetListView extends PureComponent<IProps, State> {
       return null;
     }
 
-    const {topPosition, contentHeight, titles} = this.props;
+    const {topPosition, contentHeight, titles, activeBackgroundColor, activeTextColor, inactiveTextColor} = this.props;
 
     return (
       <View
@@ -106,6 +109,9 @@ class AlphabetListView extends PureComponent<IProps, State> {
             height={itemHeight}
             title={title}
             active={selectAlphabet === title}
+            activeBackgroundColor={activeBackgroundColor}
+            activeTextColor={activeTextColor}
+            inactiveTextColor={inactiveTextColor}
           />
         ))}
       </View>

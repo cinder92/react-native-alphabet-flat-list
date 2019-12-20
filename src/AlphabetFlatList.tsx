@@ -238,6 +238,9 @@ export default class AlphabetFlatList<ItemT> extends Component<IProps<ItemT>, IS
           titles={this.state.titles}
           onSelect={this.onSelect}
           alphabetToast={this.props.alphabetToast}
+          activeBackgroundColor={this.props.activeBackgroundColor}
+          activeTextColor={this.props.activeTextColor}
+          inactiveTextColor={this.props.inactiveTextColor}
         />
       </View>
     )

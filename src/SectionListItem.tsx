@@ -14,6 +14,9 @@ interface IProps {
   title: string;
   height: number;
   active: boolean;
+  activeBackgroundColor?: string;
+  activeTextColor?: string;
+  inactiveTextColor?: string;
 }
 
 const SectionListItem: FC<IProps> = function (props) {
@@ -21,12 +24,12 @@ const SectionListItem: FC<IProps> = function (props) {
     <View style={[styles.sectionListItemContainer, {height: props.height}]}>
       <View
         style={[styles.sectionListItemWrapper, {
-          backgroundColor: props.active ? '#0ea8ff' : 'transparent',
+          backgroundColor: props.active ? props.activeBackgroundColor || 'transparent' : 'transparent',
         }]}
       >
         <Text
           style={[styles.sectionListItemText, {
-            color: props.active ? 'white' : '#333',
+            color: props.active ? props.activeTextColor || 'white' : props.inactiveTextColor || '#333',
           }]}
         >
           {props.title}
