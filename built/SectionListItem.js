@@ -10,6 +10,7 @@ const SectionListItem = function (props) {
         }]}>
         <react_native_1.Text style={[styles_1.default.sectionListItemText, {
             color: props.active ? props.activeTextColor || 'white' : props.inactiveTextColor || '#333',
+            fontSize: props.fontSize || 12
         }]}>
           {props.title}
         </react_native_1.Text>

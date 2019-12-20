@@ -57,7 +57,7 @@ class AlphabetListView extends react_1.PureComponent {
         if (itemHeight < 13) {
             return null;
         }
-        const { topPosition, contentHeight, titles, activeBackgroundColor, activeTextColor, inactiveTextColor } = this.props;
+        const { topPosition, contentHeight, titles, activeBackgroundColor, activeTextColor, inactiveTextColor, fontSize } = this.props;
         return (<react_native_1.View style={{
             position: 'absolute',
             top: topPosition,
@@ -65,7 +65,7 @@ class AlphabetListView extends react_1.PureComponent {
             zIndex: 10,
             height: contentHeight
         }} {...this.responder.panHandlers}>
-        {titles.map((title) => (<SectionListItem_1.default key={title} height={itemHeight} title={title} active={selectAlphabet === title} activeBackgroundColor={activeBackgroundColor} activeTextColor={activeTextColor} inactiveTextColor={inactiveTextColor}/>))}
+        {titles.map((title) => (<SectionListItem_1.default key={title} height={itemHeight} title={title} active={selectAlphabet === title} activeBackgroundColor={activeBackgroundColor} activeTextColor={activeTextColor} inactiveTextColor={inactiveTextColor} fontSize={fontSize}/>))}
       </react_native_1.View>);
     }
 }

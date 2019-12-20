@@ -120,7 +120,7 @@ class AlphabetFlatList extends react_1.Component {
         }} {...this.props} data={this.state.titles} renderItem={this.renderItem} keyExtractor={(item, index) => `${index}`} getItemLayout={this.getItemLayout} initialNumToRender={this.state.initialNumToRender} onViewableItemsChanged={this.onViewableItemsChanged}/>
         <AlphabetListView_1.default ref={(ref) => {
             this.alphabetList = ref;
-        }} topPosition={this.props.headerHeight} pageY={this.state.pageY + this.props.headerHeight} contentHeight={this.state.containerHeight - this.props.headerHeight} titles={this.state.titles} onSelect={this.onSelect} alphabetToast={this.props.alphabetToast} activeBackgroundColor={this.props.activeBackgroundColor} activeTextColor={this.props.activeTextColor} inactiveTextColor={this.props.inactiveTextColor}/>
+        }} topPosition={this.props.headerHeight} pageY={this.state.pageY + this.props.headerHeight} contentHeight={this.state.containerHeight - this.props.headerHeight} titles={this.state.titles} onSelect={this.onSelect} alphabetToast={this.props.alphabetToast} activeBackgroundColor={this.props.activeBackgroundColor} activeTextColor={this.props.activeTextColor} inactiveTextColor={this.props.inactiveTextColor} fontSize={this.props.fontSize}/>
       </react_native_1.View>);
     }
 }

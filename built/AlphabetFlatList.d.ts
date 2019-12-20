@@ -24,6 +24,7 @@ export interface IProps<ItemT> {
     activeBackgroundColor?: string;
     activeTextColor?: string;
     inactiveTextColor?: string;
+    fontSize?: number;
 }
 export interface IState {
     containerHeight: number;

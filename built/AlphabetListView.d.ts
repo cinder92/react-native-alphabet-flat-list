@@ -10,6 +10,7 @@ interface IProps {
     activeBackgroundColor?: string;
     activeTextColor?: string;
     inactiveTextColor?: string;
+    fontSize?: number;
 }
 declare const initState: {
     selectAlphabet: string;
